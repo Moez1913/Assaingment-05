@@ -76,7 +76,10 @@
                 >
                   Donate Now
                 </button>
-        
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!--2nd card start here-->
         <div
@@ -90,7 +93,7 @@
             <div>
               <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
                 <img src="./assets/coin.png" alt="" />
-                <p>600</p>
+                <p id="feni-fund">600</p>
                 <p>BDT</p>
               </div>
               <h1 class="text-2xl font-bold">
@@ -106,11 +109,12 @@
               </p>
               <div class="gap-4">
                 <input
+                id="feni-input"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
-                <button class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
+                <button id="btn-feni" class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
                   Donate Now
                 </button>
               </div>
@@ -130,7 +134,7 @@
             <div>
               <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
                 <img src="./assets/coin.png" alt="" />
-                <p>2240</p>
+                <p id="fund-quota">2240</p>
                 <p>BDT</p>
               </div>
               <h1 class="text-2xl font-bold">
@@ -146,42 +150,38 @@
               </p>
               <div class="gap-4">
                 <input
+                id="input-quota"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
-                <button class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
+                <button id="btn-quota" class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
                   Donate Now
                 </button>
               </div>
             </div>
           </div>
         </div>
-
-               <!--Modal part start here-->
-               <dialog
-               id="my_modal_5"
-               class="modal modal-bottom sm:modal-middle"
-             >
-               <div class="modal-box text-center flex flex-col justify-items-center items-center gap-4">
-                 <h3 class="text-5xl font-bold">Congrates!</h3>
-                 <img class="" src="./assets/coin.png" alt="">
-                 <p class="py-4">
-                  You Have Donated For HumanKind
-                 </p>
-                 <h1 class="text-lg font-bold">Successfully</h1>
-                 <div class=" text-center ">
-                   <form method="dialog">
-                    
-                     <button class="btn  ">Close Confirmation</button>
-                   </form>
-                 </div>
-               </div>
-             </dialog>
-           </div>
-         </div>
-       </div>
-     </div>
+        <!--dialog form strart here-->
+        <dialog
+        id="my_modal_5"
+        class="modal modal-bottom sm:modal-middle"
+      >
+        <div class="modal-box text-center flex flex-col justify-items-center items-center gap-4">
+          <h3 class="text-5xl font-bold">Congrates!</h3>
+          <img class="" src="./assets/coin.png" alt="">
+          <p class="py-4">
+           You Have Donated For HumanKind
+          </p>
+          <h1 class="text-lg font-bold">Successfully</h1>
+          <div class=" text-center ">
+            <form method="dialog">
+             
+              <button class="btn  ">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       </section>
     </main>
     <footer></footer>
