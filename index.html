@@ -1,102 +1,191 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class="">
-        <nav class="mx-100px">
-            <!--Parent div of navbar-->
-            <div class=" px-28 py-4 flex flex-row justify-between items-center">
-                <button class="btn btn-primary">Primary</button>
-                <div class="flex flex-row gap-4 items-center">
-                    <img src="./assets/logo.png" alt="">
-                    <h3>Donate Bangladesh</h3>
-                </div>
-                <div class="flex flex-row items-center gap-4">
-                    <img src="./assets/coin.png" alt="">
-                    <p>5500 BDT</p>
-                </div>
-            </div>
-        </nav>
-        <!-- div of toggle button start here-->
-         <div class="text-center my-10">
-            <button class="btn ">Donation</button>
-            <button class="btn ">History</button>
-         </div>
+  </head>
+  <body>
+    <header class="position sticky top-0 .">
+      <nav class="mx-100px bg-base-200">
+        <!--Parent div of navbar-->
+        <div class="px-28 py-4 flex flex-row justify-between items-center">
+          <button class="btn bg-[#B4F461] w-28">Blog</button>
+          <div class="flex flex-row gap-4 items-center">
+            <img src="./assets/logo.png" alt="" />
+            <h3>Donate Bangladesh</h3>
+          </div>
+          <div class="flex flex-row items-center gap-4">
+            <img src="./assets/coin.png" alt="" />
+            <p id="my-balance">5500 BDT</p>
+          </div>
+        </div>
+      </nav>
+      <!-- div of toggle button start here-->
+      <div class="text-center my-10">
+        <button class="btn bg-[#B4F461]">Donation</button>
+        <button class="btn bg-base-400">History</button>
+      </div>
     </header>
     <main>
-        <!-- Card section-->
-        <section class="mx-36 ">
-            <!--First start here card-->
-            <div class=" bg-[#FFFFFF]  border border-solid rounded-3xl border-base-200">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img src="./assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
-                  <div>
-                    <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
-                        <img src="./assets/coin.png" alt="">
-                        <p>5500 BDT</p>
-                    </div>
-                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
-                    </p>
-                    <div class="gap-4 ">
-                        <input type="text" placeholder="Enter Amount" class="input input-bordered w-full" />
-                    <button class="btn w-full bg-base-200 mt-4">Get Started</button>
-                    </div>
-                  </div>
-                </div>
+      <!-- Card section-->
+      <section class="mx-36">
+        <!--First card start here -->
+        <div
+          class="bg-[#FFFFFF] border border-solid rounded-3xl border-base-200"
+        >
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              id="img"
+              src="./assets/noakhali.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
+                <img src="./assets/coin.png" alt="" />
+                <p id="noakhali">0</p>
+                <p>BDT</p>
               </div>
+              <h1 class="text-2xl font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div class="gap-4">
+                <input
+                  id="noakhali-fund"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button
+                  id="btn-noakhali"
+                  class="btn w-full bg-base-200 mt-4 bg-[#B4F461]"
+                >
+                  Donate Now
+                </button>
+        
 
-              <!--2nd card start here-->
-              <div class=" bg-[#FFFFFF]  border border-solid rounded-3xl border-base-200 mt-8">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img src="./assets/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
-                  <div>
-                    <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
-                        <img src="./assets/coin.png" alt="">
-                        <p>5500 BDT</p>
-                    </div>
-                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
-                    </p>
-                    <div class="gap-4 ">
-                        <input type="text" placeholder="Enter Amount" class="input input-bordered w-full" />
-                    <button class="btn w-full bg-base-200 mt-4">Get Started</button>
-                    </div>
-                  </div>
-                </div>
+        <!--2nd card start here-->
+        <div
+          class="bg-[#FFFFFF] border border-solid rounded-3xl border-base-200 mt-8"
+        >
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./assets/feni.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
+                <img src="./assets/coin.png" alt="" />
+                <p>600</p>
+                <p>BDT</p>
               </div>
-
-              <!--3rd card start here-->
-              <div class=" bg-[#FFFFFF]  border border-solid rounded-3xl border-base-200 mt-8">
-                <div class="hero-content flex-col lg:flex-row">
-                  <img src="./assets/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
-                  <div>
-                    <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
-                        <img src="./assets/coin.png" alt="">
-                        <p>5500 BDT</p>
-                    </div>
-                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-6">
-                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
-                    </p>
-                    <div class="gap-4 ">
-                        <input type="text" placeholder="Enter Amount" class="input input-bordered w-full" />
-                    <button class="btn w-full bg-base-200 mt-4">Get Started</button>
-                    </div>
-                  </div>
-                </div>
+              <h1 class="text-2xl font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div class="gap-4">
+                <input
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
+                  Donate Now
+                </button>
               </div>
+            </div>
+          </div>
+        </div>
 
-        </section>
+        <!--3rd card start here-->
+        <div
+          class="bg-[#FFFFFF] border border-solid rounded-3xl border-base-200 mt-8"
+        >
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./assets/quota-protest.png"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <div class="flex flex-row items-center gap-1 bg-base-200 w-28">
+                <img src="./assets/coin.png" alt="" />
+                <p>2240</p>
+                <p>BDT</p>
+              </div>
+              <h1 class="text-2xl font-bold">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div class="gap-4">
+                <input
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+                <button class="btn w-full bg-base-200 mt-4 bg-[#B4F461]">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+               <!--Modal part start here-->
+               <dialog
+               id="my_modal_5"
+               class="modal modal-bottom sm:modal-middle"
+             >
+               <div class="modal-box text-center flex flex-col justify-items-center items-center gap-4">
+                 <h3 class="text-5xl font-bold">Congrates!</h3>
+                 <img class="" src="./assets/coin.png" alt="">
+                 <p class="py-4">
+                  You Have Donated For HumanKind
+                 </p>
+                 <h1 class="text-lg font-bold">Successfully</h1>
+                 <div class=" text-center ">
+                   <form method="dialog">
+                    
+                     <button class="btn  ">Close Confirmation</button>
+                   </form>
+                 </div>
+               </div>
+             </dialog>
+           </div>
+         </div>
+       </div>
+     </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/Comon_function.js"></script>
+  </body>
 </html>
