@@ -12,7 +12,7 @@
         <nav class="mx-100px bg-base-200">
             <!--Parent div of navbar-->
             <div class=" px-28 py-4 flex flex-row justify-between items-center">
-                <button class="btn bg-[#B4F461] w-28">Blog</button>
+                <button id="home" class="btn bg-[#B4F461] w-28">Home</button>
                 <div class="flex flex-row gap-4 items-center">
                     <img src="./assets/logo.png" alt="">
                     <h3>Donate Bangladesh</h3>
@@ -24,26 +24,37 @@
             </div>
         </nav>
     </header>
-    <main><div class="collapse collapse-arrow bg-base-200">
+    <main class="mt-4 mx-32">
+      <div class="collapse collapse-arrow bg-base-200 mt-4">
         <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is the Document object model(DOM)?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>DOM is a programming interface for web documents. It represents the structure of an HTML  document as a tree of objects.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200 mt-4">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>I use id selector, document.getElementById() method</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <div class="collapse collapse-arrow bg-base-200 mt-4">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation is a technique in JavaScript where we can attach a single event listener to a parent element to manage events for its child elements.It first triggers the event listener on that element
+            Then, it bubbles up to its parent and other ancestors in the DOM tree, triggering their event listeners as well.</p>
         </div>
-      </div></main>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mt-4">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How Do you manipulate an elements and styles using the DOM</div>
+        <div class="collapse-content">
+          <p>Use the innerHTML property to modify the HTML content inside an element.We can use setAttribute, getAttribute, and removeAttribute methods to manipulate attribute, style and .clasList to manipulate style</p>
+        </div>
+      </div>
+    </main>
+    <script src="./JS/blog.js"></script>
 </body>
 </html>

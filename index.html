@@ -16,7 +16,7 @@
       <nav class="mx-100px bg-base-200">
         <!--Parent div of navbar-->
         <div class="px-28 py-4 flex flex-row justify-between items-center">
-          <button class="btn bg-[#B4F461] w-28">Blog</button>
+          <button id="blog" class="btn bg-[#B4F461] w-28">Blog</button>
           <div class="flex flex-row gap-4 items-center">
             <img src="./assets/logo.png" alt="" />
             <h3>Donate Bangladesh</h3>
@@ -29,13 +29,19 @@
       </nav>
       <!-- div of toggle button start here-->
       <div class="text-center my-10">
-        <button class="btn bg-[#B4F461]">Donation</button>
-        <button class="btn bg-base-400">History</button>
+        <button id="donation" class="btn bg-[#B4F461] 'hover:bg-[#B4F461]'">Donation</button>
+        <button id="history" class="btn">History</button>
       </div>
     </header>
     <main>
+      <section id="history-section" class="hidden">
+        <div id="history">
+
+        </div>
+
+      </section>
       <!-- Card section-->
-      <section class="mx-36">
+      <section id="card" class="mx-36">
         <!--First card start here -->
         <div
           class="bg-[#FFFFFF] border border-solid rounded-3xl border-base-200"
